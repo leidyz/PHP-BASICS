@@ -6,7 +6,10 @@
     <body>
         <h1>
             <?php
-            echo "Hello, world! \n";
+            $a = 18;
+            $b = 5;
+            echo "Hello, world! Let's add. \n"; //echo means to print
+            echo "the sum of $a + $b = " . ($a + $b); //the defined variables can be inside the quotations
             ?>
         </h1>
     </body>
