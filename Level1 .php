@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> Embedded PHP</title>
-    </head>
-    <body>
-        <h1>
+
             <?php
             $a = 18;
             $b = 5;
@@ -16,7 +10,4 @@
             }else{
                 echo "$a is less than $b";
             }
-            ?>
-        </h1>
-    </body>
-</html>
+           ?>
