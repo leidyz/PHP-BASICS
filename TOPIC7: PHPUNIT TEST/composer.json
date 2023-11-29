@@ -1,0 +1,15 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "TOPIC7\\level1\\": "level1/"
+        } 
+     },
+     "autoload-dev": {
+         "psr-4": {
+             "TOPIC7\\tests\\": "tests/"
+         }
+     }
+}
