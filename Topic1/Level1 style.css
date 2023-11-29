@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.padre{
+display: flex;
+flex-flow: column;
+flex-wrap: nowrap;
+    }
+
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
+        .menu{
+            background:#2D4059;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+            .menu1{
+                background:#EA5456;
+                flex: 1 1 auto;
+            }
+            .menu2{
+                background:#EA5456;
+                flex: 5 1 auto;
+            }
+            .menu3{
+                background:#EA5456;
+                flex: 1 1 auto;
+            }
+        .texto-principal{
+            background: #EE7A3E;
+        }
+            h1{
+                background: #FBD460;
+            }
+
+    .section{
+        background: #000;
+        display: flex;
+
+    }
+        .articles{
+            background: #4E4E6A;
+            flex:2 1 auto;
+            display:flex;
+            flex-flow:row;
+            flex-wrap:wrap;
+        }
+            .article{
+                background: #206CB0;
+                flex:1 1 40%;
+              
+            }
+
+            .search{
+                background: #71A3C4;
+                flex:1 1 100%;
+            }
+        .aside{
+            background: #E9414F;
+            flex:1 1 auto;
+        }
+            .publicidad{
+                background: #FEEA85;
+            }
+
+    .footer{
+        background: #000;
+        display:flex;
+    }
+        .final{
+            background:#E6AE2F;
+            flex: 1 1 100%;
+        }
+
+@media only screen and (max-width:800px){ /*adaptacion tablet*/
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: row;
+        height:auto;
+    }
+}
+
+@media all and (max-width:600px){ /*adaptacion movil*/
+    .menu{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .menu1,
+    .menu2,
+    .menu3
+    {
+        flex: 1 1 auto; /* Equal space for each menu item */
+        width:93%;
+    }
+    .h1{
+        flex-direction: column;
+         width:93%;
+    }
+    .section{
+        flex-direction: column; 
+    }
+    .articles{
+            flex-direction: column;
+        }
+   
+
+}
